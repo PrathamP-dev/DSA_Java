@@ -10,7 +10,6 @@ class Solution {
         for (char c : s1.toCharArray()) {
             freq1[c - 'a']++;
         }
-
         int left = 0;
 
         for (int right = 0; right < s2.length(); right++) {
@@ -20,7 +19,6 @@ class Solution {
                 freq2[s2.charAt(left) - 'a']--;
                 left++;
             }
-
             if (Arrays.equals(freq1, freq2)) {
                 return true;
             }
