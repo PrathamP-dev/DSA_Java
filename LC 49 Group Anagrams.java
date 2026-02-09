@@ -1,4 +1,5 @@
 // LC 49 Group Anagrams
+// Used the hashmap for storing vales with keys 
 
 class Solution {
     public List<List<String>> groupAnagrams(String[] strs) {
@@ -12,7 +13,6 @@ class Solution {
             map.putIfAbsent(key, new ArrayList<>());
             map.get(key).add(word);
         }
-
         return new ArrayList<>(map.values());
     }
 }
