@@ -15,6 +15,7 @@
  *     }
  * }
  */
+
 class Solution {
     List<Integer> list = new ArrayList<>();
     public TreeNode balanceBST(TreeNode root) {
