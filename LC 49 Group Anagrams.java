@@ -13,6 +13,7 @@ class Solution {
             map.putIfAbsent(key, new ArrayList<>());
             map.get(key).add(word);
         }
+        
         return new ArrayList<>(map.values());
     }
 }
