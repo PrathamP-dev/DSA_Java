@@ -22,14 +22,12 @@ class Solution {
         inorder(root);
         return buildTree(0, list.size() - 1);
     }
-
     private void inorder(TreeNode root) {
         if (root == null) return;
         inorder(root.left);
         list.add(root.val);
         inorder(root.right);
     }
-
     private TreeNode buildTree(int left, int right) {
         if (left > right) return null;
 
