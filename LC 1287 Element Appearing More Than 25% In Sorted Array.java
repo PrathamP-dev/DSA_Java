@@ -1,4 +1,4 @@
-// 1287 Element Appearing More Than 25% In Sorted Array
+// LC 1287 Element Appearing More Than 25% In Sorted Array
 
 class Solution {
     public int findSpecialInteger(int[] arr) {
