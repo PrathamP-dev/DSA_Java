@@ -1,4 +1,4 @@
-// LC 696. Count Binary Substrings
+// LC 696 Count Binary Substrings
 // This is POD for 19th Feb,2026
 class Solution {
     public int countBinarySubstrings(String s) {
