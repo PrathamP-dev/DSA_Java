@@ -1,0 +1,25 @@
+// LC 1758 Minimum Changes To Make Alternating Binary String
+// This is the POD for 5th March, 2026
+
+class Solution {
+    public int minOperations(String s) {
+        int changeStart0 = 0;
+        int changeStart1 = 0;
+
+        for (int i = 0; i < s.length(); i++) {
+
+            char expected0 = (i % 2 == 0) ? '0' : '1';
+            char expected1 = (i % 2 == 0) ? '1' : '0';
+
+            if (s.charAt(i) != expected0) {
+                changeStart0++;
+            }
+
+            if (s.charAt(i) != expected1) {
+                changeStart1++;
+            }
+        }
+
+        return Math.min(changeStart0, changeStart1);
+    }
+}
